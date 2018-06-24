@@ -6,7 +6,7 @@ socket.on('connect', (data) => {
 
 //listener for 'thread' event, this updates messages
 socket.on('thread', (data) => {
-    $('#thread').append('<li>'+ data + '</li>');
+    $('#thread').append('<li><p class="text-item">'+ data + '</p></li>');
 });
 
 //send messages to the server, resets & prevents default form action

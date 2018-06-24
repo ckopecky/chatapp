@@ -22,4 +22,6 @@ io.on('connection', function(client) {
         client.broadcast.emit('thread', data);
     });
 });
-server.listen(7777);
+server.listen(7777, () => {
+    console.log("Server listening on 7777");
+});
